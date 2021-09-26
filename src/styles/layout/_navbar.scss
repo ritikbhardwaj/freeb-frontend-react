@@ -1,0 +1,70 @@
+// Navigation Bar
+.nav	{
+	width: 77vw;
+	margin: 0 auto;
+
+	&__menu {
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 10px;
+	}
+	
+	&__account {
+		&:before {
+			font-family: "Font Awesome 6 Free";
+			content: "\f007";
+			font-size: 20px;
+			margin-right: 5px;
+		}
+	}
+
+	&__favourites {
+		&:before {
+			font-family: "Font Awesome 6 Free";
+			content: "\f004";
+			font-size: 20px;
+			margin-right: 5px;
+		}
+	}
+
+	&__notifications {
+		&:before {
+			font-family: "Font Awesome 6 Free";
+			content: "\f0f3";
+			font-size: 17px;
+			margin-right: 5px;
+			color: red;
+		}
+	}
+
+	&__categories {
+		justify-content: center;
+		align-items: center;
+		padding-top: 40px;
+	}
+
+	&__trending {
+		&:before {
+			font-family: "Font Awesome 5 Brands";
+			content: "\f111";
+			font-size: 20px;
+			margin-right: 5px;
+			color: orange;
+		}
+	}
+
+
+	&__link {
+		padding: 0 10px;
+
+		&:hover {
+			color: $brand-color;
+		}
+	}
+
+	&__brand	{
+		position: relative;
+		width: 100px;
+		top: 25px;
+	}
+}

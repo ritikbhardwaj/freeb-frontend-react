@@ -1,0 +1,13 @@
+.container {
+    margin: 70px auto;
+    max-width: 77%;
+    min-width: 429px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__row {
+        margin: 0 5px;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,42 @@
+//Images must be square, otherwise the
+//alignment does not work out
+.img-card {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin-bottom: 27px;
+
+  box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.07);
+  -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.07);
+  -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.07);
+
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__name {
+    position: absolute;
+    bottom: 11px;
+    left: 16px;
+    color: white;
+    font-size: 13px;
+  }
+
+  &__likes {
+    position: absolute;
+    bottom: 11px;
+    right: 13px;
+    color: white;
+    font-size: 14px;
+
+    &:before {
+      font-family: "Font Awesome 6 Free";
+			content: "\f004";
+			font-size: 14px;
+			margin-right: 2px;
+      color: rgb(176, 22, 22);
+    }
+  }
+}

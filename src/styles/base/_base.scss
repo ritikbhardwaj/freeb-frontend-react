@@ -1,0 +1,19 @@
+ html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-light;
+  font-family: $text-font;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+}

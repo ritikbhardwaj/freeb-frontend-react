@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import
+  "abstracts/variables";
+
+// 3. Base stuff
+@import
+  "base/base";
+
+// 4. Layout-related sections
+@import
+  "layout/navbar",
+  "layout/content";
+
+// 5. Components
+@import
+  "components/button",
+  "components/image-card";
+
+// 6. Utility
+@import 
+  "utility/flexbox.scss";
+
+
