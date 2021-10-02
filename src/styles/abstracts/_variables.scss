@@ -12,22 +12,20 @@ $text-font: 'Roboto', sans-serif;
 // Font awesome icons
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css");
 
-/// Text Color
-/// @type Color
-$text-color: rgb(34, 34, 34);
-
-/// Main brand color
-/// @type Color
+//Brand color
 $brand-color: rgb(241, 0, 0);
 
-
-/// Light Background
-/// @type Color
+//Background colors
 $bg-light: rgb(250, 249, 248);
-
-/// Dark Background
-/// @type Color
+$bg-grey: rgb(228, 228, 228);
 $bg-dark: rgb(34, 34, 34);
+
+//Text colors
+$text-color: rgb(34, 34, 34);
+$text-grey: rgb(228, 228, 228);
+$grey: grey;
+//Other utility variables
+$border-radius: 3px;
 
 
 

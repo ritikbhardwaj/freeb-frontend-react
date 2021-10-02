@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Content from './components/Content'
+import Footer from './components/Footer'
 
 class App extends React.Component {
   render () {
@@ -8,6 +9,7 @@ class App extends React.Component {
       <React.Fragment>
         <Navbar />
         <Content />
+        <Footer />
       </React.Fragment>
     )
   }

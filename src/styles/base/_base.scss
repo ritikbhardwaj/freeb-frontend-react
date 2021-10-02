@@ -1,18 +1,13 @@
- html {
+ * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: $text-font;
 }
 
 body {
   background-color: $bg-light;
-  font-family: $text-font;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+  margin: 0;
 }
 
 a {

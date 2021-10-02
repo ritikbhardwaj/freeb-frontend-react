@@ -2,34 +2,117 @@
 //alignment does not work out
 .img-card {
   position: relative;
+  cursor: pointer;
+
+  &:hover {
+    .img-card__overlay, 
+    .img-card__name, 
+    .img-card__likes,
+    .img-card__collection,
+    .img-card__like {
+      display: block;
+    }
+  }
 
   &__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: $border-radius;
+  }
+
+  &__collection {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: $bg-grey;
+    position: absolute;
+    left: 315px;
+    top: 13px;
+    color: $grey;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    border-radius: 5px;
+
+    i {
+      position: relative;
+      left: 8px;
+      top:6px;
+    }
+
+    &:hover {
+      color: $bg-dark;
+      background-color: $bg-light;
+    }
+  }
+
+  &__like {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: $bg-grey;
+    position: absolute;
+    left: 275px;
+    top: 13px;
+    color: $grey;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    border-radius: 5px;
+
+    i {
+      position: relative;
+      left: 7px;
+      top: 6px;
+    }
+
+    &:hover {
+      color: $bg-dark;
+      background-color: $bg-light;
+    }
   }
 
   &__name {
+    display: none;
     position: absolute;
     bottom: 11px;
     left: 16px;
-    color: white;
+    color: $text-grey;
     font-size: 13px;
+
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+
+  &__overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    border-radius: $border-radius;
+    // background-color: rgba(0,0,0,0.25);
+    background: -webkit-radial-gradient(circle farthest-corner at center center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+    background: radial-gradient(circle farthest-corner at center center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
   }
 
   &__likes {
+    display: none;
     position: absolute;
     bottom: 11px;
     right: 13px;
-    color: white;
+    color: $text-grey;
     font-size: 14px;
 
-    &:before {
-      font-family: "Font Awesome 6 Free";
-			content: "\f004";
+    &:after {
+			content: "Likes";
 			font-size: 14px;
 			margin-right: 2px;
-      color: rgb(176, 22, 22);
+      padding-left: 5px;
+      color: $bg-grey;
     }
   }
 }
