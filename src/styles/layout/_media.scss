@@ -1,0 +1,26 @@
+@media (max-width: 768px){
+  .container {
+    max-width: 100vw;
+  }
+
+  .nav{
+    max-width: 100vw;
+
+    &__menu {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__brand {
+      width: 70px;
+    }
+  }
+
+  .nav__menu-left {
+    display: none;
+  }
+
+  .nav__menu-right{
+    display: none;
+  }
+}

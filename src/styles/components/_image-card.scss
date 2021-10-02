@@ -2,18 +2,11 @@
 //alignment does not work out
 .img-card {
   position: relative;
-  width: 350px;
-  height: 350px;
-  margin-bottom: 27px;
-
-  box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.07);
-  -webkit-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.07);
-  -moz-box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.07);
-
 
   &__img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
   }
 
   &__name {
