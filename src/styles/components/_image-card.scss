@@ -9,7 +9,8 @@
     .img-card__name, 
     .img-card__likes,
     .img-card__collection,
-    .img-card__like {
+    .img-card__like,
+    .img-card__profile-pic{
       display: block;
     }
   }
@@ -21,32 +22,7 @@
     border-radius: $border-radius;
   }
 
-  &__collection {
-    display: none;
-    width: 30px;
-    height: 30px;
-    background-color: $bg-grey;
-    position: absolute;
-    left: 315px;
-    top: 13px;
-    color: $grey;
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    border-radius: 5px;
-
-    i {
-      position: relative;
-      left: 8px;
-      top:6px;
-    }
-
-    &:hover {
-      color: $bg-dark;
-      background-color: $bg-light;
-    }
-  }
-
+  //Like button
   &__like {
     display: none;
     width: 30px;
@@ -73,11 +49,51 @@
     }
   }
 
+  //Add to collection button
+  &__collection {
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: $bg-grey;
+    position: absolute;
+    left: 315px;
+    top: 13px;
+    color: $grey;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    border-radius: 5px;
+
+    i {
+      position: relative;
+      left: 8px;
+      top:6px;
+    }
+
+    &:hover {
+      color: $bg-dark;
+      background-color: $bg-light;
+    }
+  }
+
+  //Profile picture
+  &__profile-pic {
+    display: none;
+    position:absolute;
+    object-fit: cover;
+    left: 12px;
+    bottom: 11px;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+
+  //Name of the person
   &__name {
     display: none;
     position: absolute;
-    bottom: 11px;
-    left: 16px;
+    bottom: 15px;
+    left: 45px;
     color: $text-grey;
     font-size: 13px;
 
@@ -87,22 +103,11 @@
     }
   }
 
-  &__overlay {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height:100%;
-    border-radius: $border-radius;
-    // background-color: rgba(0,0,0,0.25);
-    background: -webkit-radial-gradient(circle farthest-corner at center center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
-    background: -moz-radial-gradient(circle farthest-corner at center center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
-    background: radial-gradient(circle farthest-corner at center center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
-  }
-
+  //Number of likes on the post
   &__likes {
     display: none;
     position: absolute;
-    bottom: 11px;
+    bottom: 15px;
     right: 13px;
     color: $text-grey;
     font-size: 14px;
@@ -115,4 +120,19 @@
       color: $bg-grey;
     }
   }
+
+  //Black overlay on the image card
+  &__overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height:100%;
+    border-radius: $border-radius;
+    // background-color: rgba(0,0,0,0.25);
+    background: -webkit-radial-gradient(circle farthest-corner at center center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+    background: radial-gradient(circle farthest-corner at center center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 100%);
+  }
+
+  
 }

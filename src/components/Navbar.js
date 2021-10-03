@@ -13,7 +13,7 @@ const Navigation = () => {
         <img src={Logo} className='nav__brand'></img>
         <div className='nav__menu-right'>
           <a href='#' className='nav__link nav__account'>My account</a>
-          <a href='#' className='nav__link nav__favourites'>Favourites</a>
+          <a href='#' className='nav__link nav__favourites'>My collection</a>
         </div>
       </div>
       <div className='nav__categories d-flex flex-row'>
