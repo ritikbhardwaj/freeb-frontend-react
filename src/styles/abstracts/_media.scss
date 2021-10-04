@@ -1,6 +1,7 @@
-@media (max-width: 572px){
+@media (max-width: 768px){
   .container {
     max-width: 100vw;
+    grid-template-columns: 1fr;
   }
 
   .nav{
@@ -9,18 +10,18 @@
     &__menu {
       display: flex;
       justify-content: center;
+
+      &-left {
+        display: none;
+      }
+
+      &-right {
+        display: none;
+      }
     }
 
     &__brand {
       width: 70px;
     }
-  }
-
-  .nav__menu-left {
-    display: none;
-  }
-
-  .nav__menu-right{
-    display: none;
   }
 }
