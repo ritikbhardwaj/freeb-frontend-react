@@ -12,7 +12,6 @@
 @import
   "layout/navbar",
   "layout/content",
-  "layout/media",
   "layout/footer";
 
 // 5. Components
@@ -25,3 +24,5 @@
   "utility/flexbox.scss";
 
 
+// 7. Makeshift Media Queries
+@import "abstracts/media";
