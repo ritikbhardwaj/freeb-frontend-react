@@ -1,0 +1,17 @@
+.user-info {
+	width: 77vw;
+	margin: 0 auto;
+
+	p {
+		margin-top: 10px;
+	}
+}
+
+.user-images-holder {
+	margin: 60px auto;
+	max-width: 77vw;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	justify-items: stretch;
+	gap: 20px;
+}
