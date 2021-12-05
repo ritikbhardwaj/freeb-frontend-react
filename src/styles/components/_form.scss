@@ -1,0 +1,44 @@
+.form-wrapper {
+	max-width: 77vw;
+	// padding: 8% 0 0;
+	margin: 0 auto;
+}
+.form {
+	max-width: 400px;
+	text-align: center;
+	input {
+		outline: 0;
+		background: #f2f2f2;
+		width: 100%;
+		border: 0;
+		border-radius: 5px;
+		margin: 0 0 15px;
+		padding: 15px;
+		box-sizing: border-box;
+		font-size: 14px;
+		&:focus {
+			background: #dbdbdb;
+		}
+	}
+	button {
+		text-transform: uppercase;
+		outline: 0;
+		background: $brand-color;
+		width: 100%;
+		border: 0;
+		border-radius: 5px;
+		padding: 15px;
+		color: #ffffff;
+		font-size: 14px;
+		-webkit-transition: all 0.3 ease;
+		transition: all 0.3 ease;
+		cursor: pointer;
+		&:active {
+			background: $brand-color;
+		}
+	}
+	span {
+		font-size: 75px;
+		color: $brand-color;
+	}
+}

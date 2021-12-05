@@ -1,12 +1,15 @@
-import '@babel/polyfill'
+import '@babel/polyfill';
 
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 
-import './styles/index.scss'
+import './styles/index.scss';
 
 ReactDOM.render(
-  <App/>,
-  document.getElementById('App')
-)
+	<BrowserRouter>
+		<App />
+	</BrowserRouter>,
+	document.getElementById('App')
+);

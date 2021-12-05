@@ -1,28 +1,21 @@
 @charset "UTF-8";
 
 // 1. Configuration and helpers
-@import
-  "abstracts/variables";
+@import 'abstracts/variables';
 
 // 3. Base stuff
-@import
-  "base/base";
+@import 'base/base';
 
 // 4. Layout-related sections
-@import
-  "layout/navbar",
-  "layout/content",
-  "layout/footer";
+@import 'layout/navbar', 'layout/images-holder', 'layout/footer',
+	'layout/content-area', 'layout/about', 'layout/user-info';
 
 // 5. Components
-@import
-  "components/button",
-  "components/image-card";
+@import 'components/button', 'components/image-card', 'components/form',
+	'components/message-popup';
 
 // 6. Utility
-@import 
-  "utility/flexbox.scss";
-
+@import 'utility/flexbox.scss';
 
 // 7. Makeshift Media Queries
-@import "abstracts/media";
+@import 'abstracts/media';

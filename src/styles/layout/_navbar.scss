@@ -1,5 +1,5 @@
 // Navigation Bar
-.nav	{
+.nav {
 	width: 77vw;
 	margin: 0 auto;
 
@@ -8,11 +8,11 @@
 		align-items: center;
 		padding-top: 10px;
 	}
-	
+
 	&__account {
 		&:before {
-			font-family: "Font Awesome 6 Free";
-			content: "\f007";
+			font-family: 'Font Awesome 6 Free';
+			content: '\f007';
 			font-size: 20px;
 			margin-right: 5px;
 		}
@@ -20,20 +20,29 @@
 
 	&__favourites {
 		&:before {
-			font-family: "Font Awesome 6 Free";
-			content: "\f004";
+			font-family: 'Font Awesome 6 Free';
+			content: '\f004';
 			font-size: 20px;
 			margin-right: 5px;
 		}
 	}
 
 	&__notifications {
+		// &:before {
+		// 	font-family: "Font Awesome 6 Free";
+		// 	content: "\f0f3";
+		// 	font-size: 17px;
+		// 	margin-right: 5px;
+		// 	color: red;
+		// }
+	}
+
+	&__home {
 		&:before {
-			font-family: "Font Awesome 6 Free";
-			content: "\f0f3";
+			font-family: 'Font Awesome 6 Free';
+			content: '\e1b0';
 			font-size: 17px;
 			margin-right: 5px;
-			color: red;
 		}
 	}
 
@@ -45,14 +54,13 @@
 
 	&__trending {
 		&:before {
-			font-family: "Font Awesome 5 Brands";
-			content: "\f111";
+			font-family: 'Font Awesome 5 Brands';
+			content: '\f111';
 			font-size: 20px;
 			margin-right: 5px;
 			color: orange;
 		}
 	}
-
 
 	&__link {
 		padding: 0 10px;
@@ -62,7 +70,7 @@
 		}
 	}
 
-	&__brand	{
+	&__brand {
 		position: relative;
 		width: 100px;
 		top: 25px;
